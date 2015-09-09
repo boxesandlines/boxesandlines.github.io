@@ -26,7 +26,6 @@
         <header id="header">
             <div class="container">
                 <h1>
-                    <!--img src="/assets/img/site-logo.png" alt="Boxes and Lines logo" /-->
                     Boxes and Lines
                 </h1>
             </div>
@@ -34,8 +33,6 @@
 
         <div id="main">
             <div class="container">
-                <!--h1 class="visuallyhidden">Boxes and Lines - helping you succeed online</h1-->
-
                 <div>
                     <section>
                         <h2>Browser notifications</h2>
@@ -70,7 +67,7 @@
             e.attr("href", "mailto" + ":" + e.text());
 
         notify = function() {
-            var timeout = setTimeOut(function(){var notification = new Notification("Yes, really!")}, 1000);
+            var timeout = setTimeout(function(){var notification = new Notification("Yes, really!")}, 1000);
         }
 
         if(!("Notification" in window)) {
